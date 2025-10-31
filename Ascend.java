@@ -2,6 +2,15 @@
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		// Replace this comment with your code
+		double num = Double.parseDouble(args[0]);
+		int a = (int) (Math.random() * num);
+		int b = (int) (Math.random() * num);
+		int c = (int) (Math.random() * num);
+		int max= Math.max(a,Math.max(b,c));
+		int min= Math.min(a,Math.min(b,c));
+		int mid= a + b + c - max - min;
+		System.out.println(a + " " + b + " " + c);
+		System.out.println(min + " " + mid + " " + max);
+
 	}
 }
