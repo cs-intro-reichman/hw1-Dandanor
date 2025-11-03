@@ -17,6 +17,9 @@ public class TimeFormat {
 			hours=hours-12;
 			ampm= " PM";
 		}
+		else if(hours==12){
+			ampm=" PM";
+		}
 		if (hours>=10 && hours<=12){
 			System.out.print(hours + ":");
 		}
